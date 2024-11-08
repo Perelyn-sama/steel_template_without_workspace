@@ -1,5 +1,5 @@
 [package]
-name = "steel_template_without_workspace-program"
+name = "{name_lowercase}-program"
 description = ""
 version = "0.1.0"
 edition = "2021"

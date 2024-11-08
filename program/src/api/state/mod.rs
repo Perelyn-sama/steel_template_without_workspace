@@ -8,7 +8,7 @@ use super::consts::*;
 
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, Eq, PartialEq, IntoPrimitive, TryFromPrimitive)]
-pub enum {name_lowercase}Account {
+pub enum {name_typecase}Account {
     Counter = 0,
 }
 

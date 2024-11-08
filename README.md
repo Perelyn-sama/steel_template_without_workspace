@@ -1,6 +1,6 @@
-# {name_lowercase}
+# {name_typecase}
 
-**{name_lowercase}** is a ...
+**{name_typecase}** is a ...
 
 ## API
 - [`Consts`](program/src/api/consts.rs) – Program constants.

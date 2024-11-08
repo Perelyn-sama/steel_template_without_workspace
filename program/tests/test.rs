@@ -2,13 +2,13 @@ use solana_program::hash::Hash;
 use solana_program_test::{processor, BanksClient, ProgramTest};
 use solana_sdk::{signature::Keypair, signer::Signer, transaction::Transaction};
 use steel::*;
-use steel_template_without_workspace_program::api::prelude::*;
+use {name_libcase}_program::api::prelude::*;
 
 async fn setup() -> (BanksClient, Keypair, Hash) {
     let mut program_test = ProgramTest::new(
-        "steel_template_without_workspace_program",
+        "{name_libcase}_program",
         ID,
-        processor!(steel_template_without_workspace_program::process_instruction),
+        processor!({name_libcase}_program::process_instruction),
     );
     program_test.prefer_bpf(true);
     program_test.start().await
