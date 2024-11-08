@@ -16,8 +16,8 @@ pub fn process_instruction(
     let (ix, data) = parse_instruction(&ID, program_id, data)?;
 
     match ix {
-        SteelTemplateWithoutWorkspaceInstruction::Initialize => process_initialize(accounts, data)?,
-        SteelTemplateWithoutWorkspaceInstruction::Add => process_add(accounts, data)?,
+        {name_lowercase}Instruction::Initialize => process_initialize(accounts, data)?,
+        {name_lowercase}Instruction::Add => process_add(accounts, data)?,
     }
 
     Ok(())

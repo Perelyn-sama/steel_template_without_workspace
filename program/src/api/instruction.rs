@@ -2,7 +2,7 @@ use steel::*;
 
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, Eq, PartialEq, TryFromPrimitive)]
-pub enum SteelTemplateWithoutWorkspaceInstruction {
+pub enum {name_lowercase}Instruction {
     Initialize = 0,
     Add = 1
 }
@@ -17,5 +17,5 @@ pub struct Add {
     pub amount: [u8; 8]
 }
 
-instruction!(SteelTemplateWithoutWorkspaceInstruction, Initialize);
-instruction!(SteelTemplateWithoutWorkspaceInstruction, Add);
+instruction!({name_lowercase}Instruction, Initialize);
+instruction!({name_lowercase}Instruction, Add);
