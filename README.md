@@ -1,6 +1,6 @@
-# SteelTemplateWithoutWorkspace
+# {name_lowercase}
 
-**SteelTemplateWithoutWorkspace** is a ...
+**{name_lowercase}** is a ...
 
 ## API
 - [`Consts`](program/src/api/consts.rs) – Program constants.
